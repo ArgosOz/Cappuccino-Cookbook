@@ -17,8 +17,7 @@
     @outlet CPWebView       _webView;
     @outlet CPSplitView     _splitView;
             CPMutableArray  _tableDataArray;
-            /* CPTimer         _correctionTimer; */
-            /* int             _correctionCounter; */
+
 }
 
 - (void)applicationDidFinishLaunching:(CPNotification)aNotification
@@ -28,7 +27,7 @@
     var request = [CPURLRequest requestWithURL:url];
     var connection = [[CPURLConnection alloc] initWithRequest:request delegate:self];
 
-    // When I run a Cappucino app in a CPWebView,
+    // When we run a Cappucino app in a CPWebView,
     // the app inside the CPWebView,
     // sets its iframe.parentNode's width and height property to 0px
     // and as a result of this behavior the app stays hidden in the iframe.
@@ -47,6 +46,17 @@
     observer.observe(targetNode, config);
 
 }
+
+- (void)awakeFromCib
+{
+    // This is called when the cib is done loading.
+    // You can implement this method on any object instantiated from a Cib.
+    // It's a useful hook for setting up current UI values, and other things.
+
+    // In this case, we want the window from Cib to become our full browser window
+    [theWindow setFullPlatformWindow:YES];
+}
+
 
 // ┌───────────────────────────────────────────────────────┐
 // │                                                       │
@@ -185,14 +195,5 @@
     return nil;
 }
 
-- (void)awakeFromCib
-{
-    // This is called when the cib is done loading.
-    // You can implement this method on any object instantiated from a Cib.
-    // It's a useful hook for setting up current UI values, and other things.
-
-    // In this case, we want the window from Cib to become our full browser window
-    [theWindow setFullPlatformWindow:YES];
-}
 
 @end
