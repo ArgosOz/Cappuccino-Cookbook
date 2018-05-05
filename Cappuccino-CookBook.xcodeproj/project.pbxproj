@@ -7,40 +7,28 @@
 	objects = {
 
 /* Begin PBXFileReference section */
-		1A894871B1573444120259CF /* main.j */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = main.j; path = Resources/Icon-for-About-Window/main.j; sourceTree = SOURCE_ROOT; };
-		3648401FA69D2BFFBD9199D9 /* AppController.j */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = AppController.j; path = Resources/Icon-for-About-Window/AppController.j; sourceTree = SOURCE_ROOT; };
-		64F74DDABD10395AFE079A2F /* Resources::Icon-for-About-Window::AppController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "Resources::Icon-for-About-Window::AppController.h"; path = ".XcodeSupport/Resources::Icon-for-About-Window::AppController.h"; sourceTree = SOURCE_ROOT; };
-		6C1E40DEA6249A975EB4488C /* AppController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = AppController.m; path = .XcodeSupport/AppController.m; sourceTree = SOURCE_ROOT; };
-		6FA945F79B243DD34BCD8507 /* AppController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AppController.h; path = .XcodeSupport/AppController.h; sourceTree = SOURCE_ROOT; };
-		7FD744A492FBE670FD3551B9 /* Resources::Icon-for-About-Window::main.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "Resources::Icon-for-About-Window::main.h"; path = ".XcodeSupport/Resources::Icon-for-About-Window::main.h"; sourceTree = SOURCE_ROOT; };
-		850045EDA63B357BA44E2CAA /* xcc_general_include.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = xcc_general_include.h; path = .XcodeSupport/xcc_general_include.h; sourceTree = SOURCE_ROOT; };
-		AB2E4BD18F288405B099F28C /* Resources::Icon-for-About-Window::main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "Resources::Icon-for-About-Window::main.m"; path = ".XcodeSupport/Resources::Icon-for-About-Window::main.m"; sourceTree = SOURCE_ROOT; };
+		95FF4345987E7568F9025634 /* AppController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AppController.h; path = .XcodeSupport/AppController.h; sourceTree = SOURCE_ROOT; };
+		A93E4DC29DA3E7875ED24D62 /* xcc_general_include.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = xcc_general_include.h; path = .XcodeSupport/xcc_general_include.h; sourceTree = SOURCE_ROOT; };
+		DF27477DBE02CBC7DFA71B8F /* AppController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = AppController.m; path = .XcodeSupport/AppController.m; sourceTree = SOURCE_ROOT; };
 		E164FE29172185F500263CE3 /* Resources */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Resources; sourceTree = "<group>"; };
-		EDB0454BA42AF75E3070B857 /* Resources::Icon-for-About-Window::AppController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "Resources::Icon-for-About-Window::AppController.m"; path = ".XcodeSupport/Resources::Icon-for-About-Window::AppController.m"; sourceTree = SOURCE_ROOT; };
-		F49B45F8A1C32BBAEDCCA1E2 /* AppController.j */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = AppController.j; path = AppController.j; sourceTree = SOURCE_ROOT; };
+		E35B4431A86A37397A1DB256 /* AppController.j */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = AppController.j; path = AppController.j; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXGroup section */
-		28CB460C984ECB469BB848B7 /* Cappuccino Source */ = {
+		421747A293FE3A1ED0310AE1 /* Cappuccino Source */ = {
 			isa = PBXGroup;
 			children = (
-				F49B45F8A1C32BBAEDCCA1E2 /* AppController.j */,
-				3648401FA69D2BFFBD9199D9 /* AppController.j */,
-				1A894871B1573444120259CF /* main.j */,
+				E35B4431A86A37397A1DB256 /* AppController.j */,
 			);
 			name = "Cappuccino Source";
 			sourceTree = "<group>";
 		};
-		AFD746B8A5AC2A3B333E7B71 /* Cocoa Classes */ = {
+		43DE410BB9D811E57D2E62E0 /* Cocoa Classes */ = {
 			isa = PBXGroup;
 			children = (
-				6FA945F79B243DD34BCD8507 /* AppController.h */,
-				6C1E40DEA6249A975EB4488C /* AppController.m */,
-				64F74DDABD10395AFE079A2F /* Resources::Icon-for-About-Window::AppController.h */,
-				EDB0454BA42AF75E3070B857 /* Resources::Icon-for-About-Window::AppController.m */,
-				7FD744A492FBE670FD3551B9 /* Resources::Icon-for-About-Window::main.h */,
-				AB2E4BD18F288405B099F28C /* Resources::Icon-for-About-Window::main.m */,
-				850045EDA63B357BA44E2CAA /* xcc_general_include.h */,
+				95FF4345987E7568F9025634 /* AppController.h */,
+				DF27477DBE02CBC7DFA71B8F /* AppController.m */,
+				A93E4DC29DA3E7875ED24D62 /* xcc_general_include.h */,
 			);
 			name = "Cocoa Classes";
 			sourceTree = "<group>";
@@ -49,8 +37,8 @@
 			isa = PBXGroup;
 			children = (
 				E164FE29172185F500263CE3 /* Resources */,
-				AFD746B8A5AC2A3B333E7B71 /* Cocoa Classes */,
-				28CB460C984ECB469BB848B7 /* Cappuccino Source */,
+				43DE410BB9D811E57D2E62E0 /* Cocoa Classes */,
+				421747A293FE3A1ED0310AE1 /* Cappuccino Source */,
 			);
 			sourceTree = "<group>";
 		};
@@ -62,7 +50,7 @@
 			attributes = {
 				LastUpgradeCheck = 0460;
 			};
-			buildConfigurationList = E164FE261721857400263CE3 /* Build configuration list for PBXNativeTarget "TARGET_NAME" */;
+			buildConfigurationList = E164FE261721857400263CE3 /* Build configuration list for PBXProject "Unity-iPhone" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -93,7 +81,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		E164FE261721857400263CE3 /* Build configuration list for PBXNativeTarget "TARGET_NAME" */ = {
+		E164FE261721857400263CE3 /* Build configuration list for PBXProject "Unity-iPhone" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				E164FE271721857400263CE3 /* Debug */,
