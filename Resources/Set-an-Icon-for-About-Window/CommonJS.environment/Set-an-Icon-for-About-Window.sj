@@ -1,11 +1,11 @@
-@STATIC;1.0;p;15;AppController.jt;2181;@STATIC;1.0;I;23;Foundation/Foundation.jI;15;AppKit/AppKit.jt;2114;objj_executeFile("Foundation/Foundation.j", NO);objj_executeFile("AppKit/AppKit.j", NO);var GITHUB_REPO = 0;
+@STATIC;1.0;p;15;AppController.jt;2180;@STATIC;1.0;I;23;Foundation/Foundation.jI;15;AppKit/AppKit.jt;2113;objj_executeFile("Foundation/Foundation.j", NO);objj_executeFile("AppKit/AppKit.j", NO);var GITHUB_REPO = 0;
 
 {var the_class = objj_allocateClassPair(CPObject, "AppController"),
 meta_class = the_class.isa;class_addIvars(the_class, [new objj_ivar("theWindow", "CPWindow"), new objj_ivar("_webViewTop", "CPWebView"), new objj_ivar("_webViewBottom", "CPWebView"), new objj_ivar("_scrollView", "CPScrollView"), new objj_ivar("_viewForScrolling", "CPView")]);objj_registerClassPair(the_class);
 class_addMethods(the_class, [new objj_method(sel_getUid("applicationDidFinishLaunching:"), function $AppController__applicationDidFinishLaunching_(self, _cmd, aNotification)
 {
     ((___r1 = self._webViewTop), ___r1 == null ? null : (___r1.isa.method_msgSend["setMainFrameURL:"] || _objj_forward)(___r1, "setMainFrameURL:", "Resources/infoplistxml.html"));
-    ((___r1 = self._webViewBottom), ___r1 == null ? null : (___r1.isa.method_msgSend["setMainFrameURL:"] || _objj_forward)(___r1, "setMainFrameURL:", "Resources/infoplistxml+add.html"));
+    ((___r1 = self._webViewBottom), ___r1 == null ? null : (___r1.isa.method_msgSend["setMainFrameURL:"] || _objj_forward)(___r1, "setMainFrameURL:", "Resources/infoplistxmladd.html"));
     ((___r1 = self._scrollView), ___r1 == null ? null : (___r1.isa.method_msgSend["setDocumentView:"] || _objj_forward)(___r1, "setDocumentView:", self._viewForScrolling));
     var ___r1;
 }
