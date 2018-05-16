@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>type</key>
+		<integer>0</integer>
+		<key>content</key>
+		<string>Now we need to set column identifiers.</string>
+	</dict>
+	<dict>
+		<key>type</key>
+		<integer>0</integer>
+		<key>content</key>
+		<string>Later, at runtime, the Table view will pass us information about the columns and we will use column identifier there to get the related data. </string>
+	</dict>
+	<dict>
+		<key>type</key>
+		<integer>0</integer>
+		<key>content</key>
+		<string>First select the column named Movie...</string>
+	</dict>
+	<dict>
+		<key>type</key>
+		<integer>1</integer>
+		<key>width</key>
+		<integer>540</integer>
+		<key>height</key>
+		<integer>354</integer>
+		<key>imageName</key>
+		<string>240.gif</string>
+	</dict>
+	<dict>
+		<key>type</key>
+		<integer>0</integer>
+		<key>content</key>
+		<string> </string>
+	</dict>
+	<dict>
+		<key>type</key>
+		<integer>0</integer>
+		<key>content</key>
+		<string>Go to top right side of the Xcode Interface Builder.</string>
+	</dict>
+	<dict>
+		<key>type</key>
+		<integer>0</integer>
+		<key>content</key>
+		<string>Click &quot;Show the Identity inspector&quot; button.</string>
+	</dict>
+	<dict>
+		<key>type</key>
+		<integer>0</integer>
+		<key>content</key>
+		<string>You&apos;ll see &quot;Identifier&quot; textfield, go there, type movie and press enter.</string>
+	</dict>
+	<dict>
+		<key>type</key>
+		<integer>1</integer>
+		<key>width</key>
+		<integer>540</integer>
+		<key>height</key>
+		<integer>317</integer>
+		<key>imageName</key>
+		<string>242.gif</string>
+	</dict>
+	<dict>
+		<key>type</key>
+		<integer>0</integer>
+		<key>content</key>
+		<string> </string>
+	</dict>
+	<dict>
+		<key>type</key>
+		<integer>0</integer>
+		<key>content</key>
+		<string>We&apos;ll do this one more time for the second column... </string>
+	</dict>
+	<dict>
+		<key>type</key>
+		<integer>0</integer>
+		<key>content</key>
+		<string>Select the column named &quot;Release Year&quot;</string>
+	</dict>
+	<dict>
+		<key>type</key>
+		<integer>1</integer>
+		<key>width</key>
+		<integer>540</integer>
+		<key>height</key>
+		<integer>359</integer>
+		<key>imageName</key>
+		<string>243.gif</string>
+	</dict>
+	<dict>
+		<key>type</key>
+		<integer>0</integer>
+		<key>content</key>
+		<string> </string>
+	</dict>
+	<dict>
+		<key>type</key>
+		<integer>0</integer>
+		<key>content</key>
+		<string>Go to right side of the Xcode Interface Builder.</string>
+	</dict>
+	<dict>
+		<key>type</key>
+		<integer>0</integer>
+		<key>content</key>
+		<string>Click &quot;Show the Identity inspector&quot; button.</string>
+	</dict>
+	<dict>
+		<key>type</key>
+		<integer>0</integer>
+		<key>content</key>
+		<string>You&apos;ll see &quot;Identifier&quot; textfield, go there, type releasedate and press enter.</string>
+	</dict>
+	<dict>
+		<key>type</key>
+		<integer>1</integer>
+		<key>width</key>
+		<integer>540</integer>
+		<key>height</key>
+		<integer>238</integer>
+		<key>imageName</key>
+		<string>245.gif</string>
+	</dict>
+</array>
+</plist>

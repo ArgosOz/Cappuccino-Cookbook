@@ -105,6 +105,9 @@
                                                                                 <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
                                                                                 <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                                                             </textFieldCell>
+                                                                            <connections>
+                                                                                <binding destination="uLP-lI-rab" name="value" keyPath="objectValue.name" id="f95-te-PBj"/>
+                                                                            </connections>
                                                                         </textField>
                                                                     </subviews>
                                                                     <connections>
@@ -115,7 +118,7 @@
                                                         </tableColumn>
                                                     </tableColumns>
                                                     <connections>
-                                                        <outlet property="dataSource" destination="450" id="jxY-qg-SB5"/>
+                                                        <binding destination="ep0-Yz-4No" name="content" keyPath="arrangedObjects" id="cxb-NX-Wfz"/>
                                                         <outlet property="delegate" destination="450" id="6Ra-8S-uHT"/>
                                                     </connections>
                                                 </tableView>
@@ -172,11 +175,24 @@
         </window>
         <customObject id="450" customClass="AppController">
             <connections>
+                <outlet property="_arrayController" destination="ep0-Yz-4No" id="9Dd-Wh-N8k"/>
+                <outlet property="_searchField" destination="eD9-zG-cMz" id="TVr-jS-fjl"/>
                 <outlet property="_splitView" destination="Axd-YS-Dtx" id="pgI-B1-U0P"/>
                 <outlet property="_tableView" destination="6hL-Xa-OQI" id="8rJ-QB-7Xs"/>
                 <outlet property="_webView" destination="5wX-6S-cIh" id="k8b-bW-29o"/>
                 <outlet property="theWindow" destination="371" id="459"/>
             </connections>
         </customObject>
+        <arrayController objectClassName="Recipe" id="ep0-Yz-4No">
+            <declaredKeys>
+                <string>name</string>
+                <string>tags</string>
+                <string>timestamp</string>
+            </declaredKeys>
+            <connections>
+                <binding destination="450" name="contentArray" keyPath="tableDataArray" id="JkJ-Tg-nU8"/>
+            </connections>
+        </arrayController>
+        <userDefaultsController representsSharedInstance="YES" id="fun-yh-ggW"/>
     </objects>
 </document>

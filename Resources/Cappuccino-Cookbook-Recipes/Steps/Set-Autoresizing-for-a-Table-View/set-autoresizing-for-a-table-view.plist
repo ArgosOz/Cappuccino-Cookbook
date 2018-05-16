@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>type</key>
+		<integer>0</integer>
+		<key>content</key>
+		<string>Go to &quot;Document Outline&quot; on the left side of the Xcode window and click on &quot;Bordered Scroll View&quot; row to select the parent view of the Table View...</string>
+	</dict>
+	<dict>
+		<key>type</key>
+		<integer>1</integer>
+		<key>width</key>
+		<integer>540</integer>
+		<key>height</key>
+		<integer>334</integer>
+		<key>imageName</key>
+		<string>225.gif</string>
+	</dict>
+	<dict>
+		<key>type</key>
+		<integer>0</integer>
+		<key>content</key>
+		<string> </string>
+	</dict>
+	<dict>
+		<key>type</key>
+		<integer>0</integer>
+		<key>content</key>
+		<string>Go to &quot;Utilities&quot; on the right side of the Xcode window and click on &quot;Show the Size inspector&quot; button then go down to &quot;Autoresizing&quot; </string>
+	</dict>
+	<dict>
+		<key>type</key>
+		<integer>0</integer>
+		<key>content</key>
+		<string>This will make the Table View resize with &quot;The Window&quot;</string>
+	</dict>
+	<dict>
+		<key>type</key>
+		<integer>1</integer>
+		<key>width</key>
+		<integer>540</integer>
+		<key>height</key>
+		<integer>448</integer>
+		<key>imageName</key>
+		<string>227.gif</string>
+	</dict>
+</array>
+</plist>

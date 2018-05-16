@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>type</key>
+		<integer>0</integer>
+		<key>content</key>
+		<string>Open Terminal and go to your examples folder and type this:</string>
+	</dict>
+	<dict>
+		<key>type</key>
+		<integer>2</integer>
+		<key>language</key>
+		<string>bash</string>
+		<key>code</key>
+		<string>capp gen -l -t NibApplication __PROJECT_NAME__</string>
+	</dict>
+	<dict>
+		<key>type</key>
+		<integer>0</integer>
+		<key>content</key>
+		<string>Meaning of the line is Cappuccino generates a new project in a folder named __PROJECT_NAME__ using NibApplication template and link all the standard frameworks.</string>
+	</dict>
+	<dict>
+		<key>type</key>
+		<integer>0</integer>
+		<key>content</key>
+		<string>You can begin with a NibApplication template to create all kinds of GUI applications.</string>
+	</dict>
+	<dict>
+		<key>type</key>
+		<integer>0</integer>
+		<key>content</key>
+		<string> </string>
+	</dict>
+	<dict>
+		<key>type</key>
+		<integer>1</integer>
+		<key>width</key>
+		<integer>540</integer>
+		<key>height</key>
+		<integer>58</integer>
+		<key>imageName</key>
+		<string>101.png</string>
+	</dict>
+	<dict>
+		<key>type</key>
+		<integer>0</integer>
+		<key>content</key>
+		<string>Now open XcodeCapp app and add __PROJECT_NAME__ to the project list by pressing the plus icon located at the bottom left corner of the app.</string>
+	</dict>
+	<dict>
+		<key>type</key>
+		<integer>0</integer>
+		<key>content</key>
+		<string>After that, If you see something like this:</string>
+	</dict>
+	<dict>
+		<key>type</key>
+		<integer>1</integer>
+		<key>width</key>
+		<integer>540</integer>
+		<key>height</key>
+		<integer>125</integer>
+		<key>imageName</key>
+		<string>103.png</string>
+	</dict>
+	<dict>
+		<key>type</key>
+		<integer>0</integer>
+		<key>content</key>
+		<string>You need to set your narwhal bin path using Additional Toolchain Paths area.</string>
+	</dict>
+	<dict>
+		<key>type</key>
+		<integer>1</integer>
+		<key>width</key>
+		<integer>540</integer>
+		<key>height</key>
+		<integer>119</integer>
+		<key>imageName</key>
+		<string>104.png</string>
+	</dict>
+	<dict>
+		<key>type</key>
+		<integer>0</integer>
+		<key>content</key>
+		<string> </string>
+	</dict>
+	<dict>
+		<key>type</key>
+		<integer>0</integer>
+		<key>content</key>
+		<string>And that&apos;s it. Press play button to begin keep tracking __PROJECT_NAME__ project through XcodeCapp.</string>
+	</dict>
+	<dict>
+		<key>type</key>
+		<integer>1</integer>
+		<key>width</key>
+		<integer>540</integer>
+		<key>height</key>
+		<integer>57</integer>
+		<key>imageName</key>
+		<string>102.png</string>
+	</dict>
+</array>
+</plist>

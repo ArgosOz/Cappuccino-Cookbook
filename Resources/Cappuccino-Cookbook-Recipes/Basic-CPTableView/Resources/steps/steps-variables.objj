@@ -1,0 +1,6 @@
+@implementation AppController : CPObject
+{
+    @outlet CPWindow            theWindow;
+    @outlet CPTableView         _tableView;
+            CPMutableArray      _tableDataArray;
+}

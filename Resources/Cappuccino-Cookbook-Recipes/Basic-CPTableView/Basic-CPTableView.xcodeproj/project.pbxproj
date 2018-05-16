@@ -1,0 +1,114 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXFileReference section */
+		03974D62A9D75ADF119B7E92 /* AppController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AppController.h; path = .XcodeSupport/AppController.h; sourceTree = SOURCE_ROOT; };
+		3A9C43FDB65EAB5CCBA86BD9 /* StepsDataController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = StepsDataController.h; path = .XcodeSupport/StepsDataController.h; sourceTree = SOURCE_ROOT; };
+		3C4047838C2E28EB3B0A8720 /* PopoverViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = PopoverViewController.m; path = .XcodeSupport/PopoverViewController.m; sourceTree = SOURCE_ROOT; };
+		49D246ABAA98AFE4788043C5 /* StepsDataController.j */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StepsDataController.j; sourceTree = SOURCE_ROOT; };
+		5C5F4C73ACC3504DC3C59726 /* StepsDataController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = StepsDataController.m; path = .XcodeSupport/StepsDataController.m; sourceTree = SOURCE_ROOT; };
+		9D7847B5978C22C41672D8A3 /* StepsWindowController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = StepsWindowController.m; path = .XcodeSupport/StepsWindowController.m; sourceTree = SOURCE_ROOT; };
+		AD624F81AD8B149EC7AF3AD6 /* AppController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = AppController.m; path = .XcodeSupport/AppController.m; sourceTree = SOURCE_ROOT; };
+		C226411B9DA802D804707D59 /* AppController.j */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppController.j; sourceTree = SOURCE_ROOT; };
+		DA2146DAA31355A3215678E0 /* StepsWindowController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = StepsWindowController.h; path = .XcodeSupport/StepsWindowController.h; sourceTree = SOURCE_ROOT; };
+		E164FE29172185F500263CE3 /* Resources */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Resources; sourceTree = "<group>"; };
+		EA7340AA8ADE0EE0663A2AAB /* PopoverViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = PopoverViewController.h; path = .XcodeSupport/PopoverViewController.h; sourceTree = SOURCE_ROOT; };
+		F40E4ED0A2303746781BC2A4 /* PopoverViewController.j */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PopoverViewController.j; sourceTree = SOURCE_ROOT; };
+		F66E49BA9F6BDB6DC897EBFE /* StepsWindowController.j */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StepsWindowController.j; sourceTree = SOURCE_ROOT; };
+		F880435EA49C1031DE359F51 /* xcc_general_include.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = xcc_general_include.h; path = .XcodeSupport/xcc_general_include.h; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		2D0849358DA21D717ADA7C43 /* Cappuccino Source */ = {
+			isa = PBXGroup;
+			children = (
+				C226411B9DA802D804707D59 /* AppController.j */,
+				F40E4ED0A2303746781BC2A4 /* PopoverViewController.j */,
+				49D246ABAA98AFE4788043C5 /* StepsDataController.j */,
+				F66E49BA9F6BDB6DC897EBFE /* StepsWindowController.j */,
+			);
+			name = "Cappuccino Source";
+			sourceTree = "<group>";
+		};
+		CFC8413ABD1DD37ED3FCF682 /* Cocoa Classes */ = {
+			isa = PBXGroup;
+			children = (
+				03974D62A9D75ADF119B7E92 /* AppController.h */,
+				AD624F81AD8B149EC7AF3AD6 /* AppController.m */,
+				EA7340AA8ADE0EE0663A2AAB /* PopoverViewController.h */,
+				3C4047838C2E28EB3B0A8720 /* PopoverViewController.m */,
+				3A9C43FDB65EAB5CCBA86BD9 /* StepsDataController.h */,
+				5C5F4C73ACC3504DC3C59726 /* StepsDataController.m */,
+				DA2146DAA31355A3215678E0 /* StepsWindowController.h */,
+				9D7847B5978C22C41672D8A3 /* StepsWindowController.m */,
+				F880435EA49C1031DE359F51 /* xcc_general_include.h */,
+			);
+			name = "Cocoa Classes";
+			sourceTree = "<group>";
+		};
+		E164FE221721857400263CE3 = {
+			isa = PBXGroup;
+			children = (
+				E164FE29172185F500263CE3 /* Resources */,
+				CFC8413ABD1DD37ED3FCF682 /* Cocoa Classes */,
+				2D0849358DA21D717ADA7C43 /* Cappuccino Source */,
+			);
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXProject section */
+		E164FE231721857400263CE3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0460;
+			};
+			buildConfigurationList = E164FE261721857400263CE3 /* Build configuration list for PBXProject "Basic-CPTableView" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = E164FE221721857400263CE3;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+			);
+		};
+/* End PBXProject section */
+
+/* Begin XCBuildConfiguration section */
+		E164FE271721857400263CE3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+		E164FE281721857400263CE3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E164FE261721857400263CE3 /* Build configuration list for PBXProject "Basic-CPTableView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E164FE271721857400263CE3 /* Debug */,
+				E164FE281721857400263CE3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E164FE231721857400263CE3 /* Project object */;
+}
