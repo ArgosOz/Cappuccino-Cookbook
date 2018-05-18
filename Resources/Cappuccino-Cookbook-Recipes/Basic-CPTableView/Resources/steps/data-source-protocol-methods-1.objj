@@ -1,3 +1,0 @@
-- (CPInteger) numberOfRowsInTableView:(CPTableView)table {
-    return [_tableDataArray count];
-}

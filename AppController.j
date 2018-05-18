@@ -12,6 +12,8 @@
 @import "State.j"
 @import "Recipe.j"
 
+var GITHUB_REPO = 0;
+
 @implementation AppController : CPObject //<CPTableViewDataSource>
 {
     @outlet CPWindow            theWindow;
@@ -186,6 +188,14 @@
 }
 
 
+- (IBAction) openLinkInNewTab:(id)sender
+{
+    switch([sender tag]){
+        case GITHUB_REPO:
+            window.open("http://www.cappuccino-project.org/learn/", "_blank");
+            break;
+    }
+}
 
 // ┌───────────────────────────────────────────────────────┐
 // │                                                       │
@@ -247,7 +257,7 @@
         /* var number = [[CPNumber alloc] initWithInt:[recipe timestamp]]; */
         [_state setTimestamp: [recipe timestamp]];
         
-        var projectPath = @"Resources/Cappuccino-Cookbook-Recipes/" + [recipe folderName] + @"/index.html";
+        var projectPath = @"Resources/" + [recipe folderName] + @"/index.html";
         [_webView setMainFrameURL:projectPath];
     } else {
         [_state setTimestamp:-1];

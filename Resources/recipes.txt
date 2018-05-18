@@ -1,2 +1,4 @@
 1525438282|Set-an-Icon-for-About-Window|
-1525602716|Basic-CPTableView|
+1525602716|Cell-Based-CPTableView|
+1526606965|Cell-Based-CPOutlineView|
+1526606966|CPSplitView-Basics|

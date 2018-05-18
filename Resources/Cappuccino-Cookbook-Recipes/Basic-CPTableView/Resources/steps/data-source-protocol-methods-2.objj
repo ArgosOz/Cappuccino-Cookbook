@@ -1,7 +1,0 @@
-- (id) tableView                :(CPTableView)table 
-       objectValueForTableColumn:(CPTableColumn)column 
-       row                      :(CPInteger)rowIndex
-{
-    var rowData = [_tableDataArray objectAtIndex:rowIndex];
-    return [rowData valueForKey:[column identifier]];
-}

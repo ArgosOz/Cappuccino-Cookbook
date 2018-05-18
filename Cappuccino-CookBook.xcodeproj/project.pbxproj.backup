@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXFileReference section */
+		07F946439513688EB9BF9953 /* AppController.j */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = AppController.j; path = AppController.j; sourceTree = SOURCE_ROOT; };
 		11CF401B9B8AD5413F6231F6 /* State.j */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = State.j; path = State.j; sourceTree = SOURCE_ROOT; };
 		17CA469E81790890A0AB5742 /* AppController.j */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = AppController.j; path = Resources/Set-an-Icon-for-About-Window/AppController.j; sourceTree = SOURCE_ROOT; };
 		17E84107AFA73CECFDDFFBEA /* Resources::Basic-CPTableView::AppController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "Resources::Basic-CPTableView::AppController.h"; path = ".XcodeSupport/Resources::Basic-CPTableView::AppController.h"; sourceTree = SOURCE_ROOT; };
@@ -19,6 +20,7 @@
 		78774CA188F5CE78A47A87DA /* State.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = State.h; path = .XcodeSupport/State.h; sourceTree = SOURCE_ROOT; };
 		969D4386B800A5D62A975839 /* main.j */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = main.j; path = Resources/Set-an-Icon-for-About-Window/main.j; sourceTree = SOURCE_ROOT; };
 		9AB1461786B1E07364B0DD63 /* xcc_general_include.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = xcc_general_include.h; path = .XcodeSupport/xcc_general_include.h; sourceTree = SOURCE_ROOT; };
+		A9C04A64A4C6594D36D03825 /* AppController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AppController.h; path = .XcodeSupport/AppController.h; sourceTree = SOURCE_ROOT; };
 		B00C4789B5B652AE5C6F9685 /* Resources::Basic-CPTableView::AppController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "Resources::Basic-CPTableView::AppController.m"; path = ".XcodeSupport/Resources::Basic-CPTableView::AppController.m"; sourceTree = SOURCE_ROOT; };
 		D07044CD8533B4DF169B317E /* Recipe.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = Recipe.m; path = .XcodeSupport/Recipe.m; sourceTree = SOURCE_ROOT; };
 		D6E34F039C44818622F7BC9C /* Resources::Set-an-Icon-for-About-Window::main.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "Resources::Set-an-Icon-for-About-Window::main.h"; path = ".XcodeSupport/Resources::Set-an-Icon-for-About-Window::main.h"; sourceTree = SOURCE_ROOT; };
@@ -27,6 +29,7 @@
 		E44A4C24AD24A8FC68AB0EFD /* Resources::Set-an-Icon-for-About-Window::AppController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "Resources::Set-an-Icon-for-About-Window::AppController.h"; path = ".XcodeSupport/Resources::Set-an-Icon-for-About-Window::AppController.h"; sourceTree = SOURCE_ROOT; };
 		E8B54B53818D734E693ADCEB /* Resources::Set-an-Icon-for-About-Window::main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "Resources::Set-an-Icon-for-About-Window::main.m"; path = ".XcodeSupport/Resources::Set-an-Icon-for-About-Window::main.m"; sourceTree = SOURCE_ROOT; };
 		EDC54B3DB97EA42925B366DA /* State.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = State.m; path = .XcodeSupport/State.m; sourceTree = SOURCE_ROOT; };
+		FB2848EE9C2326AB1906AF4E /* AppController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = AppController.m; path = .XcodeSupport/AppController.m; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXGroup section */
@@ -35,6 +38,7 @@
 			children = (
 				6BBD4DBD91982AA2C3F750E7 /* AppController.j */,
 				17CA469E81790890A0AB5742 /* AppController.j */,
+				07F946439513688EB9BF9953 /* AppController.j */,
 				183D45BBBC962ABDC3EB0757 /* main.j */,
 				969D4386B800A5D62A975839 /* main.j */,
 				2CD2420981C393C6380E49B4 /* Recipe.j */,
@@ -46,6 +50,8 @@
 		D68741AF959DD8050E80A716 /* Cocoa Classes */ = {
 			isa = PBXGroup;
 			children = (
+				A9C04A64A4C6594D36D03825 /* AppController.h */,
+				FB2848EE9C2326AB1906AF4E /* AppController.m */,
 				630F4E8F9F831FC790722A17 /* Recipe.h */,
 				D07044CD8533B4DF169B317E /* Recipe.m */,
 				17E84107AFA73CECFDDFFBEA /* Resources::Basic-CPTableView::AppController.h */,
