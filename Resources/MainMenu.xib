@@ -35,10 +35,16 @@
                 <menuItem title="Help" id="103">
                     <menu key="submenu" title="Help" id="106">
                         <items>
-                            <menuItem title="Official Cappuccino Tutorials..." id="Zpi-AB-MDr">
+                            <menuItem title="GitHub Repository for Cappuccino Cookbook" id="Zpi-AB-MDr">
                                 <modifierMask key="keyEquivalentModifierMask"/>
                                 <connections>
-                                    <action selector="openLinkInNewTab:" target="450" id="C7S-IC-DNw"/>
+                                    <action selector="openLinkInNewTab:" target="450" id="1JH-Mj-RMF"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Official Cappuccino Tutorials..." tag="999" id="gzJ-7f-SQd">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <connections>
+                                    <action selector="openLinkInNewTab:" target="450" id="Zcm-FC-LEJ"/>
                                 </connections>
                             </menuItem>
                         </items>

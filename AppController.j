@@ -190,11 +190,15 @@ var GITHUB_REPO = 0;
 
 - (IBAction) openLinkInNewTab:(id)sender
 {
+    var link;
     switch([sender tag]){
         case GITHUB_REPO:
-            window.open("http://www.cappuccino-project.org/learn/", "_blank");
+            link = "https://github.com/ArgosOz/Cappuccino-Cookbook";
             break;
+        default:
+            link = "http://www.cappuccino-project.org/learn/";
     }
+    window.open(link, "_blank");
 }
 
 // ┌───────────────────────────────────────────────────────┐
