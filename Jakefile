@@ -14,7 +14,7 @@ var ENV = require("system").env,
     app = require("cappuccino/jake").app,
     configuration = ENV["CONFIG"] || ENV["CONFIGURATION"] || ENV["c"] || "Debug",
     OS = require("os"),
-    projectName = "CappuccinoCookBook";
+    projectName = "Cappuccino-CookBook";
 
 app (projectName, function(task)
 {

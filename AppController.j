@@ -46,7 +46,8 @@ var GITHUB_REPO = 0;
     var archivedState = [CPKeyedArchiver archivedDataWithRootObject:_state];
     // Save in the browser
     var defaults = [CPUserDefaults standardUserDefaults];
-    [defaults setObject:[archivedState rawString] forKey:@"archivedState"];
+    var projectName = [[CPBundle mainBundle] objectForInfoDictionaryKey:@"CPBundleName"];
+    [defaults setObject:[archivedState rawString] forKey:projectName];
 
 }
 
@@ -77,7 +78,9 @@ var GITHUB_REPO = 0;
     // sets its iframe.parentNode's width and height property to 0px
     // and as a result of this behavior the app stays hidden in the iframe.
     // So I observe iframe.parentNode and act on style attribute changes.
-    var targetNode = _webView._iframe.parentNode;
+    
+    /* var targetNode = _webView._iframe.parentNode; */
+    var targetNode = _webView._iframe;
     var config = {attributes:true};
     var callback = function(mutationsList){
         var parentOfIFrame = _webView._iframe.parentNode;
@@ -91,7 +94,8 @@ var GITHUB_REPO = 0;
     observer.observe(targetNode, config);
    
     // Load  state
-    var archivedState = [[CPUserDefaults standardUserDefaults] objectForKey:@"archivedState"];
+    var projectName = [[CPBundle mainBundle] objectForInfoDictionaryKey:@"CPBundleName"];
+    var archivedState = [[CPUserDefaults standardUserDefaults] objectForKey:projectName];
     if(archivedState){
         _state = [CPKeyedUnarchiver unarchiveObjectWithData:[CPData dataWithRawString:archivedState]];
         if(! _state){
@@ -127,7 +131,7 @@ var GITHUB_REPO = 0;
 {
     var tmpArray = [dataString componentsSeparatedByString:@"\n"];
 
-    for(var i=0; i<tmpArray.length-1; i++){ // -1 because last line is empty
+    for(var i=0; i<tmpArray.length; i++){
         var recipeData = tmpArray[i].split("|");
         var recipe = [[Recipe alloc] initWithName:recipeData[1].replace(/-/g, " ") folderName:recipeData[1] tags:recipeData[2] timestamp:parseInt(recipeData[0], 10)];
         [_arrayController addObject:recipe];
@@ -176,7 +180,7 @@ var GITHUB_REPO = 0;
 
 - (void) setPredicate:(CPString)searchString
 {
-    if(searchString.length > 0){
+    if(searchString && searchString.length > 0){
         /* var predicate = [CPPredicate predicateWithFormat:@"(%K CONTAINS[cd] %@) OR (%K CONTAINS[cd] %@)", @"name", searchString, @"tags", searchString]; */
 
         var predicate = [CPPredicate predicateWithFormat:@"(%K CONTAINS[cd] %@)", "name", searchString];
