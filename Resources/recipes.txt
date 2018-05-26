@@ -15,3 +15,7 @@
 1527147974|CPAttributedString-Basics|
 1527147975|Handling-Special-Keys|
 1527228434|CPResponder-Basics|
+1527228435|CPNotificationCenter-Basics|
+1527228436|CALayer-Basics|
+1527305370|CPAnimationContext-Basics|
+1527305371|Swap-Views-Animation|
