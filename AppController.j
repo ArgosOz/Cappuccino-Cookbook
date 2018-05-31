@@ -78,8 +78,7 @@ var GITHUB_REPO = 0;
     // sets its iframe.parentNode's width and height property to 0px
     // and as a result of this behavior the app stays hidden in the iframe.
     // So I observe iframe.parentNode and act on style attribute changes.
-    
-    /* var targetNode = _webView._iframe.parentNode; */
+
     var targetNode = _webView._iframe;
     var config = {attributes:true};
     var callback = function(mutationsList){
@@ -103,7 +102,7 @@ var GITHUB_REPO = 0;
         }
     }
 
-    [_searchField setStringValue:[_state searchString]];
+    
     
     // Now I need to set the _arrayController predicate but the contentArray is 
     // empty at this point because it is being downloaded asynchronously.
@@ -129,22 +128,43 @@ var GITHUB_REPO = 0;
 
 - (void) connection:(CPURLConnection)connection didReceiveData:(CPString)dataString
 {
+
+    
     var tmpArray = [dataString componentsSeparatedByString:@"\n"];
 
-    for(var i=0; i<tmpArray.length; i++){
+    for(var i=0; i<tmpArray.length; i++){ 
         var recipeData = tmpArray[i].split("|");
         var recipe = [[Recipe alloc] initWithName:recipeData[1].replace(/-/g, " ") folderName:recipeData[1] tags:recipeData[2] timestamp:parseInt(recipeData[0], 10)];
         [_arrayController addObject:recipe];
     }
 
 
-    // Set state back to saved one...
-    // This is the second part of the job, first one is in the applicationDidFinishLaunching method.
-    // First we set the predicate
-    [self setPredicate:[_state searchString]];
-    // If this is true that means we have a row selected before.
-    // We need to select it again programmatically.
-    if([_state timestamp] > 0){
+
+    var testName = [[[CPApplication sharedApplication] namedArguments] valueForKey:@"t"];
+    if(testName){
+        testName = testName.replace(/ /g, "-");
+        var rowNumberToBeSelected;
+        for(var i=0; i<[_arrayController arrangedObjects].length; i++){
+            if([[_arrayController arrangedObjects][i] folderName] == testName){
+                rowNumberToBeSelected = i;
+                var indexSet = [CPIndexSet indexSetWithIndex:rowNumberToBeSelected];
+                [_tableView selectRowIndexes:indexSet byExtendingSelection:NO];
+                break;
+            }
+        }
+
+    } 
+    
+    if( ! testName && [_state timestamp] > 0){
+
+        [_searchField setStringValue:[_state searchString]];
+        // Set state back to saved one...
+        // This is the second part of the job, first one is in the applicationDidFinishLaunching method.
+        // First we set the predicate
+        [self setPredicate:[_state searchString]];
+        // If this is true that means we have a row selected before.
+        // We need to select it again programmatically.
+
         var rowNumberToBeSelected;
         for(var i=0; i<[_arrayController arrangedObjects].length; i++){
             if([[_arrayController arrangedObjects][i] timestamp] == [_state timestamp]){
@@ -173,6 +193,7 @@ var GITHUB_REPO = 0;
 
 - (void) searchChanged:(id)sender
 {
+    [_tableView deselectAll];
     var searchString = [sender stringValue];
     [self saveState];
     [self setPredicate:searchString];
@@ -197,7 +218,7 @@ var GITHUB_REPO = 0;
     var link;
     switch([sender tag]){
         case GITHUB_REPO:
-            link = "https://github.com/ArgosOz/Cappuccino-Cookbook";
+            link = "https://github.com/cappuccino/cappuccino/tree/master/Tests/Manual";
             break;
         default:
             link = "http://www.cappuccino-project.org/learn/";
@@ -272,6 +293,8 @@ var GITHUB_REPO = 0;
     }
 
     [self saveState];
+
+    /* [theWindow becomeKeyWindow]; */
 }
 
 

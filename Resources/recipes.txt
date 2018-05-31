@@ -24,3 +24,9 @@
 1527559882|CPTimer-Basics|
 1527559883|Key-Value-Coding-Basics|
 1527559884|Key-Value-Path-Operators|
+1527666859|CPKeyedArchiver-Save-Your-Class|
+1527666860|CPKeyedUnarchiver-Load-Your-Class|
+1527666861|Basic-XML-HTML-Parsing|
+1527750112|Parsing-JSON|
+1527750113|CPURLConnection-HTTP-GET|
+1527750114|CPSound-Basics|
