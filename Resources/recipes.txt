@@ -30,3 +30,6 @@
 1527750112|Parsing-JSON|
 1527750113|CPURLConnection-HTTP-GET|
 1527750114|CPSound-Basics|
+1528489355|Faster-Load-Times|Deploy, Release
+1528489356|Use-Foundation-Framework-Only|
+1528489357|CPDatePicker-Basics|

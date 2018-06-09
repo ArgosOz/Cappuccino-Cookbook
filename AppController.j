@@ -139,8 +139,9 @@ var GITHUB_REPO = 0;
     }
 
 
-
-    var testName = [[[CPApplication sharedApplication] namedArguments] valueForKey:@"t"];
+    // console.info([[CPApplication sharedApplication] arguments][0]);
+    // var testName = [[[CPApplication sharedApplication] namedArguments] valueForKey:@"t"];
+    var testName = [[CPApplication sharedApplication] arguments][0];
     if(testName){
         testName = testName.replace(/ /g, "-");
         var rowNumberToBeSelected;
